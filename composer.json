@@ -1,0 +1,26 @@
+{
+    "name": "strong2much/yii2-queue",
+    "type": "yii2-extension",
+    "minimum-stability": "stable",
+    "description": "Helper classes for working with google products and technologies",
+    "keywords": ["yii2", "queue", "amazonsqs", "rabbitmq"],
+    "homepage": "https://github.com/strong2much/yii2-queue.git",
+	"license": "BSD-3-Clause",
+    "authors": [
+        {
+          "name": "Denis A. Tatarnikov",
+          "email": "strong2much@gmail.com",
+          "homepage": "https://github.com/strong2much"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "strong2much/yii2-aws": "dev-master",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "strong2much\\queue\\": "src/"
+        }
+    }
+}
