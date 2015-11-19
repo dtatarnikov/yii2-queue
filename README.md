@@ -30,7 +30,7 @@ Use the following code in your configuration file. You can use different service
 
 Then you can send messages like so:
 ```php
-$msg = new TestMessage();
+$msg = new \strong2much\queue\messages\TestMessage();
 $msg->id = 1;
 $msg->message = "Some text";
 if($msg->send()) {
