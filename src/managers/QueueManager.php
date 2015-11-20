@@ -1,5 +1,5 @@
 <?php
-namespace strong2much\managers;
+namespace strong2much\queue\managers;
 
 use Yii;
 use yii\base\Component;
