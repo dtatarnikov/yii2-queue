@@ -1,5 +1,5 @@
 <?php
-namespace strong2much\models;
+namespace strong2much\queue\models;
 
 use Yii;
 use yii\db\ActiveRecord;
