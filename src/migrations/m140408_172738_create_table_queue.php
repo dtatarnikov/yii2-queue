@@ -7,7 +7,7 @@ use yii\db\Migration;
  *
  * @author   Denis Tatarnikov <tatarnikovda@gmail.com>
  */
-class m140408_172738_create_table extends Migration
+class m140408_172738_create_table_queue extends Migration
 {
     public function up()
     {
