@@ -43,7 +43,7 @@ class DbQueue implements IQueue
     public function receiveMessage($route, $queue = false)
     {
         /** @var QueueMessage $message */
-        $message = QueueMessage::find()->where(['route'=>$route])->orderBy('time')->one();
+        $message = QueueMessage::find()->where(['[[route]]'=>$route])->orderBy('[[time]]')->one();
         if(isset($message)) {
             $msgBody = $message->message;
             $message->delete(); //delete message after receiving
