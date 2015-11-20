@@ -1,5 +1,5 @@
 <?php
-namespace strong2much\messages;
+namespace strong2much\queue\messages;
 
 use Yii;
 use yii\helpers\Json;
