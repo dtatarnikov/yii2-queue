@@ -9,7 +9,7 @@ use yii\db\Migration;
  */
 class m140408_172738_create_table_queue extends Migration
 {
-    public function up()
+    public function safeUp()
     {
         $this->createTable('{{%queue_message}}', [
             'id' => $this->primaryKey(),
@@ -21,7 +21,7 @@ class m140408_172738_create_table_queue extends Migration
         $this->createIndex('IDX_QUEUE_MSG_ROUTE', '{{%queue_message}}', 'route');
     }
 
-    public function down()
+    public function safeDown()
     {
         $this->dropIndex('IDX_QUEUE_MSG_ROUTE', '{{%queue_message}}');
 
