@@ -1,7 +1,7 @@
 <?php
 namespace strong2much\queue\services;
 
-use strong2much\models\QueueMessage;
+use strong2much\queue\models\QueueMessage;
 
 /**
  * DbQueue represents the queue service that works with db table {{queue_message}} as one big queue with multiple routes

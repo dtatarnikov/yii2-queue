@@ -1,5 +1,5 @@
 <?php
-namespace strong2much\queue\managers;
+namespace strong2much\queue;
 
 use Yii;
 use yii\base\Component;
@@ -7,7 +7,7 @@ use yii\base\Exception;
 use yii\base\InvalidConfigException;
 use yii\helpers\Inflector;
 use strong2much\queue\services\IQueue;
-use strong2much\messages\Message;
+use strong2much\queue\messages\Message;
 
 /**
  * QueueManager is an application component that manages with message queue services

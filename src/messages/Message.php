@@ -10,7 +10,7 @@ use yii\helpers\Json;
 use ReflectionClass;
 use strong2much\queue\services\DummyQueue;
 use strong2much\queue\services\IQueue;
-use strong2much\managers\QueueManager;
+use strong2much\queue\QueueManager;
 
 /**
  * Message is an abstract model for working with messages for queue service.
