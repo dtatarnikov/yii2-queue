@@ -47,7 +47,9 @@ $message = Yii::$app->queue->receiveMessage($route); //this will get first  one 
 
 //if you specify some processing function in message model,
 //then you can call it like so
-$status = Yii::app()->queue->processData($route, \yii\base\helpers\Json::decode($message->getBody()))
+if($message !== false) {
+	Yii::app()->queue->processData($route, \yii\base\helpers\Json::decode($message));
+}
 ```
 
 In order to use DbQueue as your service, you will need to apply the provided migrations.
