@@ -1,22 +1,16 @@
 <?php
 namespace strong2much\queue\services;
 
+use yii\base\Object;
+
 /**
  * DummyQueue represents the dummy queue service
  *
  * @package  App.components.queue
  * @author   Denis Tatarnikov <tatarnikovda@gmail.com>
  */
-class DummyQueue implements IQueue
+class DummyQueue extends Object implements IQueue
 {
-    /**
-     * Base initiation of queue service
-     */
-    public function init()
-    {
-
-    }
-
     /**
      * Send message to queue
      * @param string $message message to publish

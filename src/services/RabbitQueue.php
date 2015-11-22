@@ -9,13 +9,14 @@ use AMQPQueue;
 use AMQPException;
 use Yii;
 use yii\base\InvalidConfigException;
+use yii\base\Object;
 
 /**
  * RabbitQueue represents the RabbitMQ (Message Queue) service
  *
  * @author   Denis Tatarnikov <tatarnikovda@gmail.com>
  */
-class RabbitQueue implements IQueue
+class RabbitQueue extends Object implements IQueue
 {
     public $host      = 'localhost';
     public $port      = '5672';

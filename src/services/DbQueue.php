@@ -1,6 +1,7 @@
 <?php
 namespace strong2much\queue\services;
 
+use yii\base\Object;
 use strong2much\queue\models\QueueMessage;
 
 /**
@@ -8,7 +9,7 @@ use strong2much\queue\models\QueueMessage;
  *
  * @author   Denis Tatarnikov <tatarnikovda@gmail.com>
  */
-class DbQueue implements IQueue
+class DbQueue extends Object implements IQueue
 {
     /**
      * Base initiation of queue service

@@ -2,6 +2,7 @@
 namespace strong2much\queue\services;
 
 use Yii;
+use yii\base\Object;
 use Aws\Sqs\Exception\SqsException;
 use Aws\Sqs\SqsClient;
 use strong2much\aws\Aws;
@@ -11,7 +12,7 @@ use strong2much\aws\Aws;
  *
  * @author   Denis Tatarnikov <tatarnikovda@gmail.com>
  */
-class AmazonQueue implements IQueue
+class AmazonQueue extends Object implements IQueue
 {
     /**
      * @var array configuration for amazon sqs
