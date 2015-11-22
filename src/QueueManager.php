@@ -64,7 +64,7 @@ class QueueManager extends Component
 
     /**
      * Any requests to set or get attributes or call methods on this class that
-     * are not found are redirected to the {@link IMessageQueue} object.
+     * are not found are redirected to the {@link IQueue} object.
      * @param string $name the attribute name
      * @return mixed
      * @throws Exception
@@ -83,7 +83,7 @@ class QueueManager extends Component
 
     /**
      * Any requests to set or get attributes or call methods on this class that
-     * are not found are redirected to the {@link IMessageQueue} object.
+     * are not found are redirected to the {@link IQueue} object.
      * @param string $name the attribute name
      * @param mixed $value the attribute value
      * @return mixed
@@ -103,7 +103,7 @@ class QueueManager extends Component
 
     /**
      * Any requests to set or get attributes or call methods on this class that
-     * are not found are redirected to the {@link IMessageQueue} object.
+     * are not found are redirected to the {@link IQueue} object.
      * @param string $name the method name
      * @param array $parameters the method parameters
      * @return mixed
