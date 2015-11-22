@@ -12,14 +12,6 @@ use strong2much\queue\models\QueueMessage;
 class DbQueue extends Object implements IQueue
 {
     /**
-     * Base initiation of queue service
-     */
-    public function init()
-    {
-
-    }
-
-    /**
      * Send message to queue
      * @param string $message message to publish
      * @param string $route optional routing key

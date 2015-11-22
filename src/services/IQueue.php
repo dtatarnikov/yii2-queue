@@ -9,11 +9,6 @@ namespace strong2much\queue\services;
 interface IQueue
 {
     /**
-     * Base initiation of queue service
-     */
-    public function init();
-
-    /**
      * Send message to queue
      * @param string $message message to publish
      * @param string $route routing key or queue name
@@ -21,7 +16,7 @@ interface IQueue
      * @param array $attributes message attributes
      * @return boolean true on success, otherwise false
      */
-    public function sendMessage($message, $route, $flags, $attributes);
+    function sendMessage($message, $route, $flags, $attributes);
 
     /**
      * Receive next message from the queue
@@ -29,5 +24,5 @@ interface IQueue
      * @param string|bool $queue queue name, if false do not use it
      * @return string|bool next message from the queue, if not found returns false
      */
-    public function receiveMessage($route, $queue = false);
+    function receiveMessage($route, $queue = false);
 } 
