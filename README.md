@@ -21,8 +21,8 @@ $ composer require strong2much/yii2-queue "dev-master"
 Use the following code in your configuration file. You can use different services
 ```php
 'queue' => [
-    'class' => 'strong2much\queue\managers\QueueManager'
-    'service' => [
+    'class' => 'strong2much\queue\QueueManager'
+    'serviceConfig' => [
         'class' => 'strong2much\queue\services\DummyQueue',
     ]
 ]
