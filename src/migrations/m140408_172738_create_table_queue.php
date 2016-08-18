@@ -18,12 +18,12 @@ class m140408_172738_create_table_queue extends Migration
             'time' => $this->integer()->defaultValue(0),
         ]);
 
-        $this->createIndex('IDX_QUEUE_MSG_ROUTE', '{{%queue_message}}', 'route');
+        $this->createIndex('IDX_QUEUE_ROUTE', '{{%queue_message}}', 'route');
     }
 
     public function safeDown()
     {
-        $this->dropIndex('IDX_QUEUE_MSG_ROUTE', '{{%queue_message}}');
+        $this->dropIndex('IDX_QUEUE_ROUTE', '{{%queue_message}}');
 
         $this->dropTable('{{%queue_message}}');
     }
