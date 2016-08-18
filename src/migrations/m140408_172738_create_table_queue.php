@@ -13,7 +13,7 @@ class m140408_172738_create_table_queue extends Migration
     {
         $this->createTable('{{%queue_message}}', [
             'id' => $this->primaryKey(),
-            'route' => $this->string('512')->notNull(),
+            'route' => $this->string('128')->notNull(),
             'message' => $this->text(),
             'time' => $this->integer()->defaultValue(0),
         ]);
