@@ -47,10 +47,10 @@ class QueueMessage extends ActiveRecord
 	{
 		return [
 			[['route', 'message'], 'required'],
-			['route', 'string', 'max'=>512],
+			['route', 'string', 'max'=>128],
 			['message', 'string'],
-            ['time', 'integer'],
-        ];
+	            	['time', 'integer'],
+        	];
 	}
 
 	/**
@@ -61,8 +61,8 @@ class QueueMessage extends ActiveRecord
 		return [
 			'id' => 'ID',
 			'route' => Yii::t('queue', 'Route'),
-            'message' => Yii::t('queue', 'Message'),
-            'time' => Yii::t('queue', 'Time'),
+			'message' => Yii::t('queue', 'Message'),
+			'time' => Yii::t('queue', 'Time'),
 		];
 	}
 }
